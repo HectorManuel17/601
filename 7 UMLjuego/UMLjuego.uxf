@@ -1,0 +1,63 @@
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>430</x><y>30</y><w>210</w><h>30</h></coordinates><panel_attributes>MovieClip
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>20</x><y>370</y><w>210</w><h>240</h></coordinates><panel_attributes>
+setup
+
+--
+
+-private var fondo_new;
+-private var piso_new;
+-private vqar protagonista_new;
+-private var antagonista_new; 
+
+--
+
++Posicion inicial fondo
++Posición inicial piso
++Posición inicial protagonista
++Posición inicial antagonista
+
+
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>290</x><y>310</y><w>210</w><h>260</h></coordinates><panel_attributes>
+Protagonista
+
+--
+
+-private var izq: Boolean ;
+-private var der: Boolean;
+-private var vel: int;
+-private var lim_x_der: int;
+-private var lim_x_izq: int;
+
+
+--
+
++controles
+         +moverse
+         +dejar de moverse</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>530</x><y>380</y><w>210</w><h>290</h></coordinates><panel_attributes>
+antagonista
+
+--
+
+-private var vel: int;
+-private var dir:Number;
+-private var limite_der: int;
+-private var limite_izq: int;
+-private var cambia:Timer;
+-private var tipo: Number;
+-private var lanzar: Timer;
+
+--
++cambia direccion
++actualiza
++lanza bala 
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>810</x><y>430</y><w>210</w><h>120</h></coordinates><panel_attributes>bala
+--
+
+
+--
+
++Velocidad de caida
++Posicion de caida bala
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>100</x><y>50</y><w>450</w><h>340</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;320;430;10</additional_attributes></element><element><id>Relation</id><coordinates><x>390</x><y>50</y><w>160</w><h>280</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;260;140;10</additional_attributes></element><element><id>Relation</id><coordinates><x>520</x><y>50</y><w>140</w><h>350</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>120;330;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>520</x><y>50</y><w>430</w><h>400</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>410;380;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>220</x><y>450</y><w>90</w><h>30</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes><additional_attributes>70;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>220</x><y>580</y><w>330</w><h>30</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes><additional_attributes>310;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>730</x><y>490</y><w>100</w><h>30</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes><additional_attributes>80;10;10;10</additional_attributes></element></diagram>
