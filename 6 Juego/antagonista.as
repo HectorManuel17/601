@@ -21,6 +21,7 @@
 			cambia.start();
 			lanzar.addEventListener(TimerEvent.TIMER,lanza_bala);
 			lanzar.start();
+			
 		}
 		
 		public function cambia_dir(e:TimerEvent){
